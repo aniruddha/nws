@@ -32,6 +32,9 @@ app.use((request, response, next) => {
     next();
 });
 
+app.use((request, response, next) => {
+    next();
+})
 // asking for the root of the application
 app.get('/', (request, response) => {
     response.render('home.hbs', {
